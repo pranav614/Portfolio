@@ -641,6 +641,14 @@ align-items: center;
         width:350px;
     
     }
+    .education-card {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        transition: transform 0.3s ease;
+    }
 }
 @media(max-width:390px){
     .myName{
@@ -657,8 +665,16 @@ align-items: center;
     }
     .project-img{
         height:250px;
-        width:300px;
+        width:250px;
     
+    }
+    .education-card {
+        background-color: #fff;
+        
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 240px;
+        transition: transform 0.3s ease;
     }
 }
 @media(max-width:360px){
@@ -671,9 +687,15 @@ align-items: center;
 
     }
 }
-@media(max-width:410px){
+@media(max-width:420px){
     .footer-section div p{
         font-size: 12px;;
+    }
+    .profileImg{
+  
+            height: 250px;
+            width: 280px;
+
     }
     .myProfile{
         margin:0;
