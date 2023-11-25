@@ -580,6 +580,7 @@ margin-bottom: 73px;
     backdrop-filter: blur(10px);
     background-color: black;
     animation: slideIn 0.5s ease-in-out;
+    z-index:1
 }
 @keyframes slideIn {
     from {
@@ -611,7 +612,7 @@ width:100%;
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding:10px 20px;
+
 
 }
 .close{
@@ -651,6 +652,8 @@ padding:10px 20px;
     }
     .myProfile{
         margin:0;
+        margin:0px 0px 120px 0px;
+
     }
     .project-img{
         height:250px;
@@ -662,9 +665,19 @@ padding:10px 20px;
     .myName{
         font-size: 24px;
     }
+    .myProfile{
+        margin:0;
+        margin:0px 0px 120px 0px;
+
+    }
 }
 @media(max-width:410px){
     .footer-section div p{
         font-size: 12px;;
+    }
+    .myProfile{
+        margin:0;
+        margin:0px 0px 120px 0px;
+
     }
 }
