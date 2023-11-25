@@ -556,7 +556,7 @@ margin-bottom: 73px;
 @media(max-width:805px) {
 .myProfile{
     flex-direction: column-reverse;
-    margin:50px 0px;
+    margin:0px 0px 120px 0px;
 }
 .myName{
     font-size: 35px;
@@ -633,7 +633,7 @@ padding:10px 20px;
         gap:40px;
     }
     .myProfile{
-        margin:50px 0px;
+        margin:0px 0px 120px 0px;
     }
     .project-img{
         height:250px;
@@ -647,9 +647,24 @@ padding:10px 20px;
     }
     .profileImg{
         height: 250px;
-        width: 350px;
+        width: 300px;
     }
     .myProfile{
         margin:0;
+    }
+    .project-img{
+        height:250px;
+        width:300px;
+    
+    }
+}
+@media(max-width:360px){
+    .myName{
+        font-size: 24px;
+    }
+}
+@media(max-width:410px){
+    .footer-section div p{
+        font-size: 12px;;
     }
 }
