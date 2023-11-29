@@ -677,6 +677,23 @@ align-items: center;
         width: 300px;
         transition: transform 0.3s ease;
     }
+    .navSubMobile{
+        all: unset;
+        display:none;
+        flex-direction: column;
+        position:absolute;
+        right:18px;
+        gap:10px;
+        top:43px;
+        font-size: 18px;
+        backdrop-filter: blur(10px);
+        background-color: black;
+        animation: slideIn 0.5s ease-in-out;
+        z-index:1;
+        height:100vh;
+        width: 30%;
+        font-family: poppins;
+    }
 }
 @media(max-width:390px){
     .myName{
@@ -690,6 +707,23 @@ align-items: center;
         margin:0;
         margin:0px 0px 120px 0px;
 
+    }
+    .navSubMobile{
+        all: unset;
+        display:none;
+        flex-direction: column;
+        position:absolute;
+        right:18px;
+        gap:10px;
+        top:43px;
+        font-size: 18px;
+        backdrop-filter: blur(10px);
+        background-color: black;
+        animation: slideIn 0.5s ease-in-out;
+        z-index:1;
+        height:100vh;
+        width: 30%;
+        font-family: poppins;
     }
     .project-img{
         height:250px;
@@ -714,6 +748,23 @@ align-items: center;
         margin:0px 0px 120px 0px;
 
     }
+    .navSubMobile{
+        all: unset;
+        display:none;
+        flex-direction: column;
+        position:absolute;
+        right:18px;
+        gap:10px;
+        top:43px;
+        font-size: 18px;
+        backdrop-filter: blur(10px);
+        background-color: black;
+        animation: slideIn 0.5s ease-in-out;
+        z-index:1;
+        height:100vh;
+        width: 30%;
+        font-family: poppins;
+    }
 }
 @media(max-width:420px){
     .footer-section div p{
@@ -729,5 +780,22 @@ align-items: center;
         margin:0;
         margin:0px 0px 120px 0px;
 
+    }
+    .navSubMobile{
+        all: unset;
+        display:none;
+        flex-direction: column;
+        position:absolute;
+        right:18px;
+        gap:10px;
+        top:43px;
+        font-size: 18px;
+        backdrop-filter: blur(10px);
+        background-color: black;
+        animation: slideIn 0.5s ease-in-out;
+        z-index:1;
+        height:100vh;
+        width: 30%;
+        font-family: poppins;
     }
 }
