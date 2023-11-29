@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Get the particles-js container
+    
     var particlesContainer = document.getElementById("particles-js");
 
-    // Check the screen width
+  
     var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
  
     var particleSettings = {
-        number: { value: screenWidth <= 780 ? 50 : 80, density: { enable: true, value_area: 800 } },
+        number: { value: screenWidth <= 780 ? 70 : 80, density: { enable: true, value_area: 800 } },
         color: { value: '#B20F3F' },
         shape: { type: 'circle', stroke: { width: 0, color: '#000000' }, polygon: { nb_sides: 5 } },
         opacity: { value: 0.6, random: false, anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false } },
