@@ -595,14 +595,20 @@ margin-bottom: 73px;
     display:none;
     flex-direction: column;
     position:absolute;
-    right:59px;
+    right:18px;
     gap:10px;
-    top:50px;
+    top:43px;
     font-size: 18px;
     backdrop-filter: blur(10px);
     background-color: black;
     animation: slideIn 0.5s ease-in-out;
-    z-index:1
+    z-index:1;
+    height:100vh;
+    width: 30%;
+    font-family: poppins;
+}
+.hide-nav{
+    margin-left:20px;
 }
 @keyframes slideIn {
     from {
