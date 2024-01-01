@@ -1,3 +1,7 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 body{
     
    margin:0;
@@ -250,10 +254,13 @@ h2{
 }
 .sectionThree{
     margin:150px 0px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .Project-list{
     margin:50px 0px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap:150px;
@@ -596,6 +603,7 @@ margin-bottom: 73px;
     }
     .Project-list{
         flex-direction: column;
+        width:100%;
     }
     .certification-img {
         max-width: 70%;
@@ -603,80 +611,105 @@ margin-bottom: 73px;
         border: 2px solid #ddd;
         border-radius: 8px;
     }
-    
-}
-@media(max-width:805px) {
-.myProfile{
-    flex-direction: column-reverse;
-    margin:0px 0px 120px 0px;
-}
-.myName{
-    font-size: 35px;
-   }
-   .profileImg{
-    height: 250px;
-    width: 400px;
-}
-.navSub{
-    display: none;
-}
-.navSubMobile{
-    all: unset;
-    display:none;
-    flex-direction: column;
-    position:absolute;
-    right:18px;
-    gap:10px;
-    top:43px;
-    font-size: 18px;
-    backdrop-filter: blur(10px);
-    background-color: black;
-    animation: slideIn 0.5s ease-in-out;
-    z-index:1;
-    height:100vh;
-    width: 30%;
-    font-family: poppins;
-}
-.hide-nav{
-    margin-left:20px;
-}
-@keyframes slideIn {
-    from {
-        transform: translateX(100%);
+    .project-img{
+        height:250px;
+    width:400px;
     }
-    to {
-        transform: translateX(0);
+    
+}
+.frameworks-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+}
+
+@media (min-width:809px) {
+    .menu-container{
+        display: none;
     }
+
 }
 
-.menu{
-    display:block;
+
+/* werknvlekvlfenl */
+@media (max-width: 809px) {
+    .myProfile {
+        flex-direction: column-reverse;
+        margin: 0 0 120px 0;
+    }
+   
+    .navSub{
+         display: none;
+        flex-direction: column;
+        position:absolute;
+        right:33px;
+        top:90px;
+        background-color: black;
+        height:100vh;
+        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.4);
+        animation:  ease-in-out 1s right-left;
+       
+        
+    }
+
+    @keyframes right-left {
+        from{
+            transform:translateX(100%);
+        }
+        to{
+            transform: translateX(0%);
+        }
+        
+    }
+    .navElements{
+        display:block;
+        display: flex;
+        flex-direction: column;
+        position:absolute;
+        right:33px;
+        top:90px;
+        background-color: black;
+        height:100vh;
+        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.4);
+        animation:  ease-in-out 0.5s right-left;
+        z-index: 4;
+        padding: 0px 20px
+    }
+
+    .myName {
+        font-size: 35px;
+    }
+
+    .profileImg {
+        height: 250px;
+        width: 400px;
+    }
+
+    .navBar {
+        padding: 10px 20px;
+    }
+
+    .navSub {
+        gap: 30px;
+    }
+
+    .Project-list {
+        gap: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+    }
+
+    .myProfile {
+        margin: 80px 0px;
+    }
+
     
 }
-.menu svg{
-    fill:white;
-}
 
-.navSubMobile  svg{
-fill:white;
-
-}
-.navSubMobile a{
-    cursor:pointer;
-    
-}
-.bar{
-width:100%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-
-
-}
-.close{
-    margin-right:25px;
-}
-}
 @media(max-width:630px){
     .skill-img {
         height: 100px;
@@ -707,23 +740,7 @@ align-items: center;
         width: 300px;
         transition: transform 0.3s ease;
     }
-    .navSubMobile{
-        all: unset;
-        display:none;
-        flex-direction: column;
-        position:absolute;
-        right:18px;
-        gap:10px;
-        top:43px;
-        font-size: 18px;
-        backdrop-filter: blur(10px);
-        background-color: black;
-        animation: slideIn 0.5s ease-in-out;
-        z-index:1;
-        height:100vh;
-        width: 30%;
-        font-family: poppins;
-    }
+    
 }
 @media(max-width:390px){
     .myName{
@@ -738,23 +755,7 @@ align-items: center;
         margin:0px 0px 120px 0px;
 
     }
-    .navSubMobile{
-        all: unset;
-        display:none;
-        flex-direction: column;
-        position:absolute;
-        right:18px;
-        gap:10px;
-        top:43px;
-        font-size: 18px;
-        backdrop-filter: blur(10px);
-        background-color: black;
-        animation: slideIn 0.5s ease-in-out;
-        z-index:1;
-        height:100vh;
-        width: 30%;
-        font-family: poppins;
-    }
+   
     .project-img{
         height:250px;
         width:250px;
@@ -778,23 +779,7 @@ align-items: center;
         margin:0px 0px 120px 0px;
 
     }
-    .navSubMobile{
-        all: unset;
-        display:none;
-        flex-direction: column;
-        position:absolute;
-        right:18px;
-        gap:10px;
-        top:43px;
-        font-size: 18px;
-        backdrop-filter: blur(10px);
-        background-color: black;
-        animation: slideIn 0.5s ease-in-out;
-        z-index:1;
-        height:100vh;
-        width: 30%;
-        font-family: poppins;
-    }
+    
 }
 @media(max-width:420px){
     .footer-section div p{
@@ -811,21 +796,81 @@ align-items: center;
         margin:0px 0px 120px 0px;
 
     }
-    .navSubMobile{
-        all: unset;
-        display:none;
-        flex-direction: column;
-        position:absolute;
-        right:18px;
-        gap:10px;
-        top:43px;
-        font-size: 18px;
-        backdrop-filter: blur(10px);
-        background-color: black;
-        animation: slideIn 0.5s ease-in-out;
-        z-index:1;
-        height:100vh;
-        width: 30%;
-        font-family: poppins;
-    }
+   
 }
+.hamburger {
+    padding: 15px 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible; }
+    .hamburger:hover {
+      opacity: 0.7; }
+    .hamburger.is-active:hover {
+      opacity: 0.7; }
+    .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner::before,
+    .hamburger.is-active .hamburger-inner::after {
+      background-color: white; }
+  
+  .hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative; }
+  
+  .hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px; }
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+      width: 40px;
+      height: 4px;
+      background-color: white;
+      border-radius: 4px;
+      position: absolute;
+      transition-property: transform;
+      transition-duration: 0.15s;
+      transition-timing-function: ease; }
+    .hamburger-inner::before, .hamburger-inner::after {
+      content: "";
+      display: block; }
+    .hamburger-inner::before {
+      top: -10px; }
+    .hamburger-inner::after {
+      bottom: -10px; }
+.hamburger--emphatic {
+    overflow: hidden; }
+    .hamburger--emphatic .hamburger-inner {
+      transition: background-color 0.125s 0.175s ease-in; }
+      .hamburger--emphatic .hamburger-inner::before {
+        left: 0;
+        transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, left 0.125s 0.175s ease-in; }
+      .hamburger--emphatic .hamburger-inner::after {
+        top: 10px;
+        right: 0;
+        transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, right 0.125s 0.175s ease-in; }
+    .hamburger--emphatic.is-active .hamburger-inner {
+      transition-delay: 0s;
+      transition-timing-function: ease-out;
+      background-color: transparent !important; }
+      .hamburger--emphatic.is-active .hamburger-inner::before {
+        left: -80px;
+        top: -80px;
+        transform: translate3d(80px, 80px, 0) rotate(45deg);
+        transition: left 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1); }
+      .hamburger--emphatic.is-active .hamburger-inner::after {
+        right: -80px;
+        top: -80px;
+        transform: translate3d(-80px, 80px, 0) rotate(-45deg);
+        transition: right 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  
+        

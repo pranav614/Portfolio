@@ -28,7 +28,6 @@
             
          </div>
 
-         <div class="menu" onclick="openBar()"><svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" width="35"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></div>
          <div class="navSub">
                 <a href="#myProfile">About Me</a>
                 <a href="#sectionTwo">Skills</a>
@@ -36,16 +35,15 @@
                 <a href="#education">Education</a> 
                 <a href="#contact">Contact</a>  
          </div>
+         <div class="menu-container" onclick="handleMenu()">
+            <button class="hamburger hamburger--emphatic " type="button" id="hamburgerBtn">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+         </div>
          
          
-         <div class="navSubMobile">
-            <div class="close" onclick="closeFunc()"><svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" width="40"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></div>
-            <a class="hide-nav"href="#myProfile">About Me</a>
-            <a class="hide-nav"href="#sectionTwo">Skills</a>
-            <a class="hide-nav"href="#section3">Projects</a>
-            <a class="hide-nav"href="#education">Education</a> 
-            <a class="hide-nav"href="#contact">Contact</a>  
-     </div>
         </nav>
               
 
@@ -102,7 +100,16 @@
                             </div>
                         </div>
                     </div>
-                   <div class="webLanguages">
+                   <div class="webLanguages flex flex-col-reverse">
+                    <div>
+                        <div class="skills-card">
+                            <img src="./skill photos/redux.svg" class="skill-img" alt="">
+                        </div>
+                        <div class="">
+                            <div class="language-container">Redux</div>
+                            
+                        </div>
+                    </div>
                     <div>
                         <div class="skills-card">
                             <img src="./skill photos/html.png" class="skill-img" alt="">
@@ -121,13 +128,17 @@
                             
                         </div>
                     </div>
+                    
+                   </div>
+                   <h1 class="heading tools">FrameWorks</h1>
+
+                   <div class="frameworks-container">
                     <div>
                         <div class="skills-card">
                             <img src="./skill photos/React.png" class="skill-img" alt="">
                         </div>
                         <div>
                             <div class="language-container">React.Js</div>
-                            
                         </div>
                     </div>
                     
@@ -140,7 +151,17 @@
                             
                         </div>
                     </div>
+                    <div>
+                        <div class="skills-card">
+                            <img src="./skill photos/screenshot_361.jpg" class="skill-img" alt="">
+                        </div>
+                        <div>
+                            <div class="language-container">Tailwind</div>
+                            
+                        </div>
+                    </div>
                    </div>
+                   
                    <h1 class="heading tools">Tools</h1>
  
                    <div class="tools">
@@ -184,20 +205,21 @@
             <h1 class="heading">Projects</h1>
             <div class="Project-list">
                 <div class="project">
-                  <img src="./image/Pasted Graphic.jpg" class="project-img" alt="">
-                  <div class="project-Info">
-                  <p>Food Ordering Website</p>
-                  <div class="linkContainer">
-                    <a href="https://pranav614.github.io/Resturant-clone/"><i class="fa-solid fa-link"></i></a>
-                    <a href="https://github.com/pranav614/Resturant-clone"><span>GitHub</span></a>
-                  </div>
-                  
-                </div>
-                </div>
+                    <img src="./image/Screenshot 2023-12-30 at 5.38.02 PM.png"  class="project-img" alt="">
+                    <div class="project-Info">
+                        <p>Netflix Clone (React.Js)</p>
+                        <div class="linkContainer">
+                           <a href="https://netflixclone009.netlify.app/"><i class="fa-solid fa-link"></i></a> 
+                            <a href="https://github.com/pranav614/Netflix_Clone"><span>GitHub</span></a>
+                          </div>
+    
+                    </div>
+                    </div>
+               
                 <div class="project">
                 <img src="./image/Screenshot 2023-11-11 at 5.36.33 PM.png"  class="project-img" alt="">
                 <div class="project-Info">
-                    <p>Health Care Prediction On Diabetes Website</p>
+                    <p>Health Care Prediction On Diabetes Website(HTML,CSS and PYTHON)</p>
                     <div class="linkContainer">
                        <a href="https://github.com/pranav614/Diabetes-Prediction"><i class="fa-solid fa-link"></i></a> 
                         <a href="https://github.com/pranav614/Diabetes-Prediction"><span>GitHub</span></a>
@@ -206,6 +228,27 @@
                 </div>
 
                 </div>
+                <div class="project">
+                    <img src="./image/Pasted Graphic.jpg" class="project-img" alt="">
+                    <div class="project-Info">
+                    <p>Food Ordering Website(Plain JAVASCRIPT)</p>
+                    <div class="linkContainer">
+                      <a href="https://pranav614.github.io/Resturant-clone/"><i class="fa-solid fa-link"></i></a>
+                      <a href="https://github.com/pranav614/Resturant-clone"><span>GitHub</span></a>
+                    </div>
+                    
+                  </div>
+                  </div>
+                  <div class="project">
+                    <img src="./image/Screenshot 2023-12-31 at 3.37.28 PM.png" class="project-img" alt="">
+                    <div class="project-Info">
+                    <p>Food Ordering Website(React.Js)</p>
+                    <div class="linkContainer">
+                      <a href="https://foodorderingsite11.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                      <a href="https://github.com/pranav614/swiggy_clone"><span>GitHub</span></a>
+                    </div>
+                  </div>
+                  </div>
 
             </div>
         </section>

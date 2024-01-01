@@ -1,17 +1,12 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+  
+    hamburgerBtn.addEventListener('click', function() {
+      this.classList.toggle('is-active');
+    });
 
-let mobileNavbar = document.querySelector(".navSubMobile");
-let closeDiv = document.querySelector(".close");
-let menu = document.querySelector(".menu");
-
-
-const openBar = () => {
-    mobileNavbar.style.display = "flex";
-    menu.style.display = "none";
-}
-
-const closeFunc = () => {
-    mobileNavbar.style.display = "none";
-    menu.style.display = "block";
-};
-
-
+    const navSub=document.querySelector(".navSub");
+    handleMenu=()=>{
+        navSub.classList.toggle('navElements');
+    }
+  });
