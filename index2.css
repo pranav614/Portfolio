@@ -125,17 +125,17 @@ color:white;
     width: 600px;
     border-radius: 100px;
     gap: 40px;
-    animation-name: bounce;
+    /* animation-name: bounce;
     animation-duration: 1s;
     animation-fill-mode: both;
     animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
 }
 .profileImg:hover{
     animation-name: none;
     cursor: pointer;
 }
-@keyframes bounce {
+/* @keyframes bounce {
 	0%, 100%, 20%, 50%, 80% {
 		-webkit-transform: translateY(0);
 		-ms-transform:     translateY(0);
@@ -151,7 +151,7 @@ color:white;
 		-ms-transform:     translateY(-15px);
 		transform:         translateY(-15px)
 	}
-}
+} */
 @keyframes slide-left {
     from{
         margin-left:50%;
