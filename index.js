@@ -14,6 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const navBar=document.querySelector(".navBar");
   const myCv=document.querySelector(".myCv");
   const contact=document.querySelector("#contact");
+  
+  const icons=document.querySelector(".domainContainer");
+
 
 
   function updateCursorPosition(event) {
@@ -54,6 +57,17 @@ contact.addEventListener("mouseleave", function() {
 });
 
 contact.addEventListener("mouseenter", function() {
+  gsap.to(cursor, {
+      scale: 0,
+  });
+});
+icons.addEventListener("mouseleave", function() {
+  gsap.to(cursor, {
+      scale: 1,
+  });
+});
+
+icons.addEventListener("mouseenter", function() {
   gsap.to(cursor, {
       scale: 0,
   });
